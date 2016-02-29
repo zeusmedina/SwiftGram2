@@ -12,9 +12,13 @@
 		CEA1053C1C8427B3005843EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1053A1C8427B3005843EC /* Main.storyboard */; };
 		CEA1053E1C8427B3005843EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA1053D1C8427B3005843EC /* Assets.xcassets */; };
 		CEA105411C8427B3005843EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA1053F1C8427B3005843EC /* LaunchScreen.storyboard */; };
+		CEA105491C842FE1005843EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA105481C842FE1005843EC /* LoginViewController.swift */; };
+		F6349AE004CFCDB5738965F3 /* Pods_SwiftGram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC36D221D6313E0EE7ECF3E8 /* Pods_SwiftGram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B0C24E9554C762D28D7AFE3 /* Pods-SwiftGram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGram.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftGram/Pods-SwiftGram.release.xcconfig"; sourceTree = "<group>"; };
+		5F72FD0EFE86964363A17C09 /* Pods-SwiftGram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftGram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftGram/Pods-SwiftGram.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA105331C8427B3005843EC /* SwiftGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEA105361C8427B3005843EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEA105381C8427B3005843EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		CEA1053D1C8427B3005843EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEA105401C8427B3005843EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEA105421C8427B3005843EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA105481C842FE1005843EC /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DC36D221D6313E0EE7ECF3E8 /* Pods_SwiftGram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftGram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6349AE004CFCDB5738965F3 /* Pods_SwiftGram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				CEA105351C8427B3005843EC /* SwiftGram */,
 				CEA105341C8427B3005843EC /* Products */,
+				E7A86AE8011FB96D75208A26 /* Pods */,
+				F1122873AC71AD4D30138D50 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				CEA1053D1C8427B3005843EC /* Assets.xcassets */,
 				CEA1053F1C8427B3005843EC /* LaunchScreen.storyboard */,
 				CEA105421C8427B3005843EC /* Info.plist */,
+				CEA105481C842FE1005843EC /* LoginViewController.swift */,
 			);
 			path = SwiftGram;
+			sourceTree = "<group>";
+		};
+		E7A86AE8011FB96D75208A26 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F72FD0EFE86964363A17C09 /* Pods-SwiftGram.debug.xcconfig */,
+				4B0C24E9554C762D28D7AFE3 /* Pods-SwiftGram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1122873AC71AD4D30138D50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC36D221D6313E0EE7ECF3E8 /* Pods_SwiftGram.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA105451C8427B3005843EC /* Build configuration list for PBXNativeTarget "SwiftGram" */;
 			buildPhases = (
+				5DEEF0DA8442D704A4A49855 /* Check Pods Manifest.lock */,
 				CEA1052F1C8427B3005843EC /* Sources */,
 				CEA105301C8427B3005843EC /* Frameworks */,
 				CEA105311C8427B3005843EC /* Resources */,
+				D8CA8A08AF1BA1B2CBDDD9F0 /* Embed Pods Frameworks */,
+				9013F5796783E96840D842F6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +161,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DEEF0DA8442D704A4A49855 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9013F5796783E96840D842F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftGram/Pods-SwiftGram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8CA8A08AF1BA1B2CBDDD9F0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftGram/Pods-SwiftGram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CEA1052F1C8427B3005843EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA105491C842FE1005843EC /* LoginViewController.swift in Sources */,
 				CEA105391C8427B3005843EC /* ViewController.swift in Sources */,
 				CEA105371C8427B3005843EC /* AppDelegate.swift in Sources */,
 			);
@@ -246,6 +325,7 @@
 		};
 		CEA105461C8427B3005843EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F72FD0EFE86964363A17C09 /* Pods-SwiftGram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftGram/Info.plist;
@@ -257,6 +337,7 @@
 		};
 		CEA105471C8427B3005843EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B0C24E9554C762D28D7AFE3 /* Pods-SwiftGram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftGram/Info.plist;
@@ -285,6 +366,7 @@
 				CEA105471C8427B3005843EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

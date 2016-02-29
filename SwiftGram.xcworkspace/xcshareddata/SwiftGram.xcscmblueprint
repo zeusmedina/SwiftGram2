@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "9FC6091EC22F6798721D88A9C62FD9C025D67C4F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9FC6091EC22F6798721D88A9C62FD9C025D67C4F" : 0,
+    "7AC08624DD313E93FF900901BC5F90395EA31F88" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F2A89888-45CC-42AE-BEA2-74E99AB43F80",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9FC6091EC22F6798721D88A9C62FD9C025D67C4F" : "SwiftGram\/",
+    "7AC08624DD313E93FF900901BC5F90395EA31F88" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftGram",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftGram.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zeusmedina\/SwiftGram.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7AC08624DD313E93FF900901BC5F90395EA31F88"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/zeusmedina\/SwiftGram2.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9FC6091EC22F6798721D88A9C62FD9C025D67C4F"
+    }
+  ]
+}
