@@ -48,11 +48,31 @@
                     <connections>
                         <outlet property="passwordField" destination="je5-HE-ipn" id="VLp-Ot-rf5"/>
                         <outlet property="usernameField" destination="JCP-IT-McQ" id="RVg-o6-G9j"/>
+                        <segue destination="ikB-HB-eMK" kind="presentation" identifier="loginSegue" id="y0F-69-Jtj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="305" y="418"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pEk-gQ-IWW">
+            <objects>
+                <viewController id="ikB-HB-eMK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WQi-IY-g16"/>
+                        <viewControllerLayoutGuide type="bottom" id="zcB-MP-tBs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zy0-t0-pXc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myp-Zn-Xjy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="828" y="443"/>
         </scene>
     </scenes>
 </document>

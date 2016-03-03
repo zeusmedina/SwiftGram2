@@ -28,9 +28,30 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onSignIn(sender: AnyObject) {
+        PFUser.logInWithUsernameInBackground(usernameField.text! , password: passwordField.text!) { (user: PFUser?, error: NSError?) -> Void in
+            if user != nil {
+                print("user logged in!")
+                self.performSegueWithIdentifier("loginSegue", sender: nil)
+            }
+        }
     }
 
     @IBAction func onSignUp(sender: AnyObject) {
+        let newUser = PFUser()
+        
+        newUser.username = usernameField.text
+        newUser.password = passwordField.text
+        newUser.signUpInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+            if success {
+                print("Yay createad a user.")
+                self.performSegueWithIdentifier("loginSegue", sender: nil)
+            } else {
+                print(error?.localizedDescription)
+                if error?.code == 202 {
+                    print("user name is taken!")
+                }
+            }
+        }
     }
     /*
     // MARK: - Navigation

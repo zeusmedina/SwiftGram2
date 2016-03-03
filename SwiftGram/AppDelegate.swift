@@ -21,7 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Parse.initializeWithConfiguration(
             ParseClientConfiguration(block: { (configuration:ParseMutableClientConfiguration) -> Void in
                 configuration.applicationId = "SwiftGram"
-                configuration.server = "secret-earth-53440.herokuapp.com"
+                configuration.clientKey = "i23j42093jrfaisenf430"
+                configuration.server = "https://secret-earth-53440.herokuapp.com/parse"
+                
             })
         )
         return true
