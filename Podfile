@@ -4,6 +4,8 @@
  use_frameworks!
 
 target 'SwiftGram' do
-	pod ‘Parse’
+    pod 'Parse'
+    pod 'AFNetworking'
+    pod 'SVProgressHUD'
 end
 

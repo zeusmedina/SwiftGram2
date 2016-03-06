@@ -84,10 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-SwiftGram/AFNetworking.framework"
   install_framework "Pods-SwiftGram/Bolts.framework"
   install_framework "Pods-SwiftGram/Parse.framework"
+  install_framework "Pods-SwiftGram/SVProgressHUD.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-SwiftGram/AFNetworking.framework"
   install_framework "Pods-SwiftGram/Bolts.framework"
   install_framework "Pods-SwiftGram/Parse.framework"
+  install_framework "Pods-SwiftGram/SVProgressHUD.framework"
 fi
