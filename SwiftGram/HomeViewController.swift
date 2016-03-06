@@ -11,6 +11,8 @@ import Parse
 import AFNetworking
 import SVProgressHUD
 
+let logoutNotification = "User Logged Out\n"
+
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var window: UIWindow?
@@ -82,6 +84,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
             else {
                 
                 NSLog("Logout Success")
+                NSNotificationCenter.defaultCenter().postNotificationName(logoutNotification, object: nil)
                 
 
             }
